@@ -1,5 +1,5 @@
 import mysql.connector as m
-mycon=m.connect(host="localhost", user="root", password="yourpasswd", charset='UTF8')
+mycon=m.connect(host="localhost", user="root", password="yourpasswd") #[charset='UTF8']can be used if character set error comes] 
 mycur=mycon.cursor()
 mycur.execute('drop database school')
 mycur.execute('create database school')
